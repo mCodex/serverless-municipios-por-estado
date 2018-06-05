@@ -1,0 +1,29 @@
+service: serverless-municipios-por-estado
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+custom:
+  webpack:
+    webpackConfig: 'webpack.config.js'
+    packager: 'yarn'
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  getStates:
+    handler: src/endpoint/getStates.func
+    events:
+       - http:
+           path: getStates
+           method: get
+
+  getCities:
+    handler: src/endpoint/getCities.func
+    events:
+       - http:
+           path: getCities/{stateId}
+           method: get
