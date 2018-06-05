@@ -5,5 +5,5 @@ export function getAllStates() {
 }
 
 export function getCityByStateId(stateId) {
-  return States.findById(stateId, 'cidades');
+  return States.findById(stateId, '-_id cidades');
 }
