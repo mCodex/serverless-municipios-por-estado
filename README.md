@@ -1,6 +1,6 @@
 # serverless-municipios-por-estado
 
-[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
+[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com) [![Greenkeeper badge](https://badges.greenkeeper.io/mCodex/serverless-municipios-por-estado.svg)](https://greenkeeper.io/)
 
 ## Introdução
 
